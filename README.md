@@ -1,6 +1,6 @@
 # Udacity Nanodegree: Front-End Fundamentals 
 
-## Project List
+### Project List
 
 - [x] **Mockup to Article**
 - [ ] **Animal Cards**
