@@ -3,7 +3,8 @@ You've learned a lot about web development so far. I want you to take a moment t
   * What has been easy?
   * What has been difficult?
   * How have you used the problem solving strategies from the first project to overcome challenges so far?
-
 ---
 
 Your response goes here!
+
+As I have a long experience writing HTML, I did remember the basics and some tags which I don't use often. It was an easy exercise technically but, to send it without mistakes, I did pay accurate attention to pdf archive and his details, creating a checklist to support me in this task.
