@@ -1,0 +1,61 @@
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    padding: 5%;
+    min-height: 100vh;
+    background-color: rgba(0,0,0,.1);
+    font: 18px/1.5 'Helvetica', sans-serif;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}  
+
+.col {
+    margin: 2.5%;
+    padding: 2.5%;
+    background-color: white;
+    box-shadow: 0 .2em .5em rgba(0,0,0,.025);
+}
+  
+/* 
+ * mq breakpoints
+ * min-width = precisa ter PELO MENOS essa largura para renderizar
+ * max-width = só renderiza se a largura for MENOR que o especificado
+ *
+ */
+  
+@media screen and (max-width: 400px) {
+    body {
+        border: 5px solid #DB9346;
+    }
+}
+
+@media screen and (min-width: 301px) and (max-width: 600px) {
+    body {
+        border: 5px solid #5866A6;
+    }
+}
+
+@media screen and (min-width: 601px) {
+    body {
+        border: 5px solid #D71A45;
+    }
+}
+
+@media screen and (min-width: 961px) {
+    body {
+        border: 5px solid #2F9047;
+    }
+    section {
+        flex-direction: row;
+    }
+}
+
