@@ -3,4 +3,5 @@
 ### Project List
 
 - [x] **Mockup to Article**
-- [ ] **Animal Cards**
+- [x] **Animal Cards**
+- [ ] **Build a Portfolio Site**
