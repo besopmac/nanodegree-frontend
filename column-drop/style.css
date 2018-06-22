@@ -1,0 +1,59 @@
+*, *:after, *:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    position: relative;
+    background-color: rgba(0,0,0,.1);
+    font: 18px/1.5 'Helvetica', sans-serif;
+}
+
+/*
+ * default
+ *
+ */
+.container {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+.box {
+    width: 100%;
+}
+
+
+/*
+ * colors
+ *
+ */
+.dark_blue {
+    background-color: #1F3569;
+}
+.light_blue {
+    background-color: #219ECD;
+}
+.green {
+    background-color: #198938;
+}
+
+
+@media screen and (min-width: 450px) {
+    .dark_blue {
+        width: 25%;
+    }
+    .light_blue {
+        width: 75%;
+    }
+}
+
+@media screen and (min-width: 550px) {
+    .dark_blue, .green {
+        width: 25%;
+    }
+    .light_blue {
+        width: 50%;
+    }
+}
