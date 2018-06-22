@@ -1,0 +1,61 @@
+*, *:after, *:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    position: relative;
+    font: 18px/1.5 'Helvetica', sans-serif;
+}
+
+/*
+ * default
+ *
+ */
+.container {
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+.box {
+    width: 100%;
+}
+
+/*
+ * colors
+ *
+ */
+.dark_blue  { background-color: #1F3569; }
+.light_blue { background-color: #219ECF; }
+.green      { background-color: #198938; }
+.red        { background-color: #D40B32; }
+.orange     { background-color: #ff8c11; }
+
+/*
+ * media queries
+ *
+ */
+@media screen and (min-width: 450px) {
+    .light_blue, .green {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 550px) {
+    .dark_blue, .light_blue {
+        width: 50%;
+    }
+    .green, .red, .orange {
+        width: 33.333333%;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .container {
+        width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
