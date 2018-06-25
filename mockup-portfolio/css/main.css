@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,900');
+
+*,
+*:after,
+*:before {
+    margin: 0;
+    box-sizing: border-box;
+}
+img,
+embed,
+object,
+video {
+	max-width: 100%;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+
+.wrapper {
+    width: 60em;
+    margin: 0 auto;
+}
+
+
+/*
+ * header
+ *
+ */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    min-width: 5vw;
+    height: auto;
+}
+.professional {
+    display: inherit;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+/*
+ * featured
+ *
+ */
+.featured {
+    display: flex;
+    justify-content: space-between;
+
+    border: 1px solid red;
+}
+
+.featured_item {
+    width: calc((100% - 20px)/3);
+    
+    border: 1px dashed yellow;
+}
