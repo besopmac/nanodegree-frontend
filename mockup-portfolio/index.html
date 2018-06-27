@@ -10,40 +10,53 @@
 <body>
     <div class="wrapper">
         <header>
-            <a href="#" class="logo"><img src="images/logo.svg" alt="A bolt logo... a little tribute for David Bowie"></a>
+            <a href="#" class="logo"><img src="images/spaceship.svg" alt="There's a starman waiting in the sky..."></a>
 
-            <div class="professional">
-                <h1 class="name">Bruno N. Campos</h1>
-                <p class="title">Front-End Absolute Beginner</p>
+            <div class="identity">
+                <h1 class="title">Bruno Campos</h1>
+                <p class="subtitle">Front-End Development</p>
             </div>
         </header>
-        <picture>
-            <img src="images/code_1940.jpg" alt="A cool banner with some code">
-        </picture>
-        
-        <h3 class="subtitle">Featured Work</h3>
-        
+
         <main class="featured">
-            <section class="featured_item">
-                <picture>
-                    <img src="images/beagle-hunting.jpg" alt="Beagle Docs Project">
-                </picture>
-                <h2>Project: Beagle Docs</h2>
-                <a href="#" target="_blank">github.com/beagledocs</a>
-            </section>
-            <section class="featured_item">
-                <picture>
-                    <img src="images/messaging-apps.jpg" alt="Messaging apps prototypes">
-                </picture>
-                <h2>Message Apps Prototypes</h2>
-                <a href="#" target="_blank">github.com/msgapps</a>
-            </section>
-            <section class="featured_item">
-                <picture>
-                    <img src="images/blog.jpg" alt="Read my articles">
-                </picture>
-                <h2>My articles</h2>
-                <a href="#" target="_blank">besopmac.me/blog</a>
+            <picture class="featured_banner">
+                <source media="(max-width: 450px)" srcset="code_1940-450w_1x.jpg 1x, code_1940-450w_2x.jpg 2x">
+                <source media="(min-width: 800px)" srcset="code_1940-800w_1x.jpg 1x, code_1940-800w_2x.jpg 2x">
+                <img src="images/code_1940.jpg" alt="A cool banner with some code">
+            </picture>
+                    
+            <h3 class="featured_title">Featured Projects</h3>
+            
+            <section class="featured_portfolio">
+                <div class="portfolio_item">
+                    <picture>
+                        <source media="(max-width: 450px)" srcset="beagle-hunting-450w_1x.jpg 1x, beagle-hunting-450w_2x.jpg 2x">
+                        <source media="(min-width: 800px)" srcset="beagle-hunting-800w_1x.jpg 1x, beagle-hunting-800w_2x.jpg 2x">
+                        <img src="images/beagle-hunting-800w_2x.jpg" alt="Beagle Docs Project">
+                    </picture>
+                    <h2>Beagle Docs</h2>
+                    <a href="#" target="_blank">github.com/beagledocs</a>
+                </div>
+                
+                <div class="portfolio_item">
+                    <picture>
+                        <source media="(max-width: 450px)" srcset="messaging-apps-450w_1x.jpg 1x, messaging-apps-450w_2x.jpg 2x">
+                        <source media="(min-width: 800px)" srcset="messaging-apps-800w_1x.jpg 1x, messaging-apps-800w_2x.jpg 2x">
+                        <img src="images/messaging-apps-800w_2x.jpg" alt="Messaging apps prototypes">
+                    </picture>
+                    <h2>Apps Prototypes</h2>
+                    <a href="#" target="_blank">github.com/msgapps</a>
+                </div>
+                
+                <div class="portfolio_item">
+                    <picture>
+                        <source media="(max-width: 450px)" srcset="blog-450w_1x.jpg 1x, blog-450w_2x.jpg 2x">
+                        <source media="(min-width: 800px)" srcset="blog-800w_1x.jpg 1x, blog-800w_2x.jpg 2x">
+                        <img src="images/blog-800w_2x.jpg" alt="Read my articles">
+                    </picture>
+                    <h2>The Playbook</h2>
+                    <a href="#" target="_blank">besopmac.me/blog</a>
+                </div>
             </section>
         </main>
     </div>

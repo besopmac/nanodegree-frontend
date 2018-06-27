@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:400,900');
+@import url('https://fonts.googleapis.com/css?family=Lato:100,400,900');
 
 *,
 *:after,
 *:before {
     margin: 0;
     box-sizing: border-box;
+    transition: .3ms all ease;
 }
 img,
 embed,
@@ -17,10 +18,15 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
-
 .wrapper {
     width: 60em;
     margin: 0 auto;
+}
+
+header,
+main {
+    display: flex;
+    margin-bottom: 2em;
 }
 
 
@@ -29,34 +35,78 @@ body {
  *
  */
 header {
-    display: flex;
-    align-items: center;
+    padding: 2em 0;
+    align-items: flex-end;
     justify-content: space-between;
+    border-bottom: 3px solid rgba(0, 0, 0, .05);
 }
+
 .logo {
-    min-width: 5vw;
     height: auto;
+    min-width: 70px;
 }
-.professional {
+
+.identity {
+    color: #2c4251;
     display: inherit;
     align-items: flex-end;
     flex-direction: column;
     justify-content: flex-end;
+    text-transform: uppercase;
 }
+
+.title {
+    font-size: 3em;
+    font-weight: 100;
+}
+
+.subtitle {
+    font-size: 1.15em;
+    font-weight: 400;
+}
+
 
 /*
  * featured
  *
  */
 .featured {
-    display: flex;
-    justify-content: space-between;
-
-    border: 1px solid red;
+    flex-direction: column;
 }
 
-.featured_item {
-    width: calc((100% - 20px)/3);
-    
-    border: 1px dashed yellow;
+.featured_banner {
+    margin-bottom: 2em;
+}
+
+.featured_title {
+    font-size: 2em;
+    line-height: 2em;
+    font-weight: 900;
+    color: #d16666;
+}
+
+.featured_portfolio {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*
+ * portfolio
+ *
+ */
+.portfolio_item {
+    text-align: center;
+    width: calc((100% - 30px)/3);
+}
+.portfolio_item > h2 {
+    color: #333;
+    font-weight: 400;
+    font-size: 1.5em;
+    margin-top: .5em;
+    text-transform: uppercase;
+}
+.portfolio_item > a {
+    font-size: .9em;
+    color: #333;
 }
