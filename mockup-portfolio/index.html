@@ -8,57 +8,39 @@
     <title>Bruno N. Campos - Portfolio</title>
 </head>
 <body>
-    <div class="wrapper">
-        <header>
-            <a href="#" class="logo"><img src="images/spaceship.svg" alt="There's a starman waiting in the sky..."></a>
+    <header>
+        <a href="#" class="logo"><img src="images/spaceship.svg" alt="There's a starman waiting in the sky..."></a>
 
-            <div class="identity">
-                <h1 class="title">Bruno Campos</h1>
-                <p class="subtitle">Front-End Development</p>
+        <div class="identity">
+            <h1 class="title">Bruno Campos</h1>
+            <p class="subtitle">Front-End Development</p>
+        </div>
+    </header>
+
+    <main class="featured">
+        <img src="images/code_1940-800w_2x.jpg" alt="A cool banner with some code">
+                
+        <h3 class="featured_title">Featured Projects</h3>
+        
+        <section class="featured_portfolio">
+            <div class="portfolio_item">
+                <img class="portfolio_image" src="images/beagle-hunting-800w_2x.jpg" alt="Beagle Docs Project">
+                <h2>Beagle Docs</h2>
+                <a href="#" target="_blank">github.com/beagledocs</a>
             </div>
-        </header>
-
-        <main class="featured">
-            <picture class="featured_banner">
-                <source media="(max-width: 450px)" srcset="code_1940-450w_1x.jpg 1x, code_1940-450w_2x.jpg 2x">
-                <source media="(min-width: 800px)" srcset="code_1940-800w_1x.jpg 1x, code_1940-800w_2x.jpg 2x">
-                <img src="images/code_1940.jpg" alt="A cool banner with some code">
-            </picture>
-                    
-            <h3 class="featured_title">Featured Projects</h3>
             
-            <section class="featured_portfolio">
-                <div class="portfolio_item">
-                    <picture>
-                        <source media="(max-width: 450px)" srcset="beagle-hunting-450w_1x.jpg 1x, beagle-hunting-450w_2x.jpg 2x">
-                        <source media="(min-width: 800px)" srcset="beagle-hunting-800w_1x.jpg 1x, beagle-hunting-800w_2x.jpg 2x">
-                        <img src="images/beagle-hunting-800w_2x.jpg" alt="Beagle Docs Project">
-                    </picture>
-                    <h2>Beagle Docs</h2>
-                    <a href="#" target="_blank">github.com/beagledocs</a>
-                </div>
-                
-                <div class="portfolio_item">
-                    <picture>
-                        <source media="(max-width: 450px)" srcset="messaging-apps-450w_1x.jpg 1x, messaging-apps-450w_2x.jpg 2x">
-                        <source media="(min-width: 800px)" srcset="messaging-apps-800w_1x.jpg 1x, messaging-apps-800w_2x.jpg 2x">
-                        <img src="images/messaging-apps-800w_2x.jpg" alt="Messaging apps prototypes">
-                    </picture>
-                    <h2>Apps Prototypes</h2>
-                    <a href="#" target="_blank">github.com/msgapps</a>
-                </div>
-                
-                <div class="portfolio_item">
-                    <picture>
-                        <source media="(max-width: 450px)" srcset="blog-450w_1x.jpg 1x, blog-450w_2x.jpg 2x">
-                        <source media="(min-width: 800px)" srcset="blog-800w_1x.jpg 1x, blog-800w_2x.jpg 2x">
-                        <img src="images/blog-800w_2x.jpg" alt="Read my articles">
-                    </picture>
-                    <h2>The Playbook</h2>
-                    <a href="#" target="_blank">besopmac.me/blog</a>
-                </div>
-            </section>
-        </main>
-    </div>
+            <div class="portfolio_item">
+                <img class="portfolio_image" src="images/messaging-apps-800w_2x.jpg" alt="Messaging apps prototypes">
+                <h2>Apps Prototypes</h2>
+                <a href="#" target="_blank">github.com/msgapps</a>
+            </div>
+            
+            <div class="portfolio_item">
+                <img class="portfolio_image" src="images/blog-800w_2x.jpg" alt="Read my articles">
+                <h2>The Playbook</h2>
+                <a href="#" target="_blank">besopmac.me/blog</a>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
