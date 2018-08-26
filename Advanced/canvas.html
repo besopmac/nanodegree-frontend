@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Working with Canvas</title>
+</head>
+<body>
+    <canvas id="canvas" width="300" height="300"></canvas>
+
+    <script>
+        let canvas = document.querySelector('#canvas');
+        let context = canvas.getContext('2d');
+
+        let image = new Image();
+
+        image.onload = function() {
+            console.log('Loaded image');
+            context.drawImage(image, 0, 0, canvas.width, canvas.height);
+
+            let savedImage = canvas.toDataURL(); // O método toDataURL cria uma string de texto que representa a foto;
+            window.open(savedImage);
+        }
+        image.src = 'kek.jpg';
+    </script>
+</body>
+</html>

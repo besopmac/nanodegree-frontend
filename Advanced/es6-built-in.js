@@ -42,3 +42,23 @@ orderIceCream('mango', 'cookie');
 setTimeout(() => {
     console.log('Start test...');
 }, 2000);
+
+
+// Default and Destructuring
+function createGrid([width = 5, height = 5] = []) {
+    return `Generates a ${width} x ${height} grid`;
+}
+
+// Q1. Qual opção executará com erro
+// function houseDescriptor([houseColor = 'green', shutterColors = ['red']]) {
+//     return `I have a ${houseColor} house with ${shutterColors.join(' and ')} shutters`;
+// }
+
+// Q2. Qual opção executara com erro
+function houseDescriptor({houseColor = 'green', shutterColors = ['red']} = {}) {
+    return `I have a ${houseColor} house with ${shutterColors.join(' and ')} shutters`;
+}
+
+function buildHouse({floors = 1, color = 'red', walls = 'brick'} = {}) {
+    return `Your house has ${floors} floor(s) with ${color} ${walls} walls.`;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Working with Canvas</title>
+</head>
+<body>
+    <canvas id="canvas" width="500" height="500"></canvas>
+
+    <script>
+        let canvas = document.querySelector('#canvas');
+        let context = canvas.getContext('2d');
+
+        /*
+        context.fillRect(100, 100, 100, 100);
+        context.strokeRect(50, 50, 100, 100);
+
+        context.beginPath();
+        context.moveTo(75, 75);
+        context.lineTo(125, 75);
+        context.lineTo(125, 125);
+        context.fill();
+        */
+
+        context.font = '36px Impact';
+        context.textAlign = 'center';
+
+        context.fillStyle = 'white';
+        context.fillText('CANVAS MEMES!', canvas.width / 2, 40);
+        
+        context.strokeStyle = 'black';
+        context.lineWidth = 2;
+        context.strokeText('CANVAS MEMES!', canvas.width / 2, 40);
+    </script>
+</body>
+</html>
